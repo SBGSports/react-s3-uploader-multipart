@@ -79,7 +79,7 @@ var ReactS3Uploader = createReactClass({
             contentDisposition: this.props.contentDisposition,
             server: this.props.server,
             scrubFilename: this.props.scrubFilename,
-            s3path: this.props.s3path
+            s3Path: this.props.s3path
         });
     },
 
@@ -106,7 +106,7 @@ var ReactS3Uploader = createReactClass({
         if ( this.props.autoUpload ) {
             additional.onChange = this.uploadFile;
         }
-        
+
         var temporaryProps = objectAssign({}, this.props, additional);
         var inputProps = {};
 
